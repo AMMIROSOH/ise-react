@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Ballerina Search</h1>
+      <h1>Amirhossein Search</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Search String</label>
@@ -82,8 +82,8 @@ function App() {
         {response.map(item => (
           <div key={item.id} className="response-item">
             <h3>{item.payload.name}</h3>
-            <h4>Score: {item.score}</h4>
-            <h4>Score: {item.scoreCustom+0.7}</h4>
+            {/* <h4>Score: {item.score}</h4>
+            <h4>Score: {item.scoreCustom+0.7}</h4> */}
             <p><strong>Code:</strong> {item.payload.code}</p>
             <p><strong>Price:</strong> {item.payload.currency} {item.payload.current_price}</p>
             <p><strong>Description:</strong> {item.payload.description}</p>
